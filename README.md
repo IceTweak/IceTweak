@@ -56,15 +56,15 @@
 package main
 
 import (
+	"fmt"
 	"sync"
 	"unsafe"
-	"reflect"
 )
 
 var secret = [...]byte{72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33}
 
 type obscure struct {
-	ptr uintptr
+	ptr *byte
 	len int
 	done chan struct{}
 }
@@ -74,24 +74,20 @@ func main() {
 	wg.Add(1)
 
 	ob := &obscure{
-		ptr: uintptr(unsafe.Pointer(&secret)),
+		ptr: &secret[0],
 		len: len(secret),
 		done: make(chan struct{}),
 	}
 
 	go func(o *obscure) {
 		<-o.done
-		sh := reflect.StringHeader{
-			Data: o.ptr,
-			Len:  o.len,
-		}
-		println(*(*string)(unsafe.Pointer(&sh)))
+		msg := unsafe.Slice(o.ptr, o.len)
+		fmt.Println(string(msg))
 		wg.Done()
 	}(ob)
 
 	close(ob.done)
 	wg.Wait()
 }
-
 ```
 

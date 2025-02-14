@@ -51,3 +51,47 @@
 ![AAVE](https://img.shields.io/badge/DeFi-AAVE-informational?style=for-the-badge&logo=aave&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![Balancer](https://img.shields.io/badge/DeFi-Balancer-informational?style=for-the-badge&logo=balancer&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 
+## This is unsafe 🔞
+```golang
+package main
+
+import (
+	"sync"
+	"unsafe"
+	"reflect"
+)
+
+var secret = [...]byte{72, 101, 108, 108, 111, 44, 32, 87, 111, 114, 108, 100, 33}
+
+type obscure struct {
+	ptr uintptr
+	len int
+	done chan struct{}
+}
+
+func main() {
+	var wg sync.WaitGroup
+	wg.Add(1)
+
+	ob := &obscure{
+		ptr: uintptr(unsafe.Pointer(&secret)),
+		len: len(secret),
+		done: make(chan struct{}),
+	}
+
+	go func(o *obscure) {
+		<-o.done
+		sh := reflect.StringHeader{
+			Data: o.ptr,
+			Len:  o.len,
+		}
+		println(*(*string)(unsafe.Pointer(&sh)))
+		wg.Done()
+	}(ob)
+
+	close(ob.done)
+	wg.Wait()
+}
+
+```
+

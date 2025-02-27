@@ -52,7 +52,9 @@
 
 ![Ethereum](https://img.shields.io/badge/Blockchain-Ethereum-informational?style=for-the-badge&logo=ethereum&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![NEAR](https://img.shields.io/badge/Blockchain-NEAR-informational?style=for-the-badge&logo=near&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
-![HLF](https://img.shields.io/badge/Blockchain-Hyperledger_Fabric-informational?style=for-the-badge&logo=hlf&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
+
+![Polygon](https://img.shields.io/badge/Blockchain-Polygon-informational?style=for-the-badge&logo=polygon&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
+![HLF](https://img.shields.io/badge/Blockchain-Hyperledger-informational?style=for-the-badge&logo=hyperledger&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 
 ![Uniswap](https://img.shields.io/badge/DeFi-Uniswap-informational?style=for-the-badge&logo=unicorn&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![AAVE](https://img.shields.io/badge/DeFi-AAVE-informational?style=for-the-badge&logo=aave&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)

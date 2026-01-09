@@ -15,7 +15,7 @@
 
 ## 🧰🛠️ Батин ящик с инструментами
 
-![Debian](https://img.shields.io/badge/OS-Debian-informational?style=for-the-badge&logo=nixos&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
+![Debian](https://img.shields.io/badge/OS-Debian-informational?style=for-the-badge&logo=debian&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![zsh](https://img.shields.io/badge/Shell-Zsh-informational?style=for-the-badge&logo=Zsh&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![VSCode](https://img.shields.io/badge/Editor-VSCode-informational?style=for-the-badge&logo=codeium&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ---

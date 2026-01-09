@@ -33,6 +33,7 @@
 ![Docker](https://img.shields.io/badge/OPS-Docker-informational?style=for-the-badge&logo=docker&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![K8S](https://img.shields.io/badge/OPS-Kubernetes-informational?style=for-the-badge&logo=kubernetes&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ![Helm](https://img.shields.io/badge/OPS-Helm-informational?style=for-the-badge&logo=helm&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
+![Nginx](https://img.shields.io/badge/OPS-Nginx-informational?style=for-the-badge&logo=nginx&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
 ---
 
 ![Prometheus](https://img.shields.io/badge/SRE-Prometheus-informational?style=for-the-badge&logo=prometheus&logoColor=BD93F9&color=f2e9c2&labelColor=282A36)
